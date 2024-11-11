@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
-public class NPCDialogue : MonoBehaviour
+
+public class MrPengDialogue : MonoBehaviour
 {
     public DialogueRunner Runner;
     public GameObject SpeechPrompt;
     public string startNode;
     public bool canstartconservation;
- 
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class NPCDialogue : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E) && canstartconservation == true)
+        if (Input.GetKeyUp(KeyCode.Space) && canstartconservation == true)
         {
             if (!Runner.IsDialogueRunning && canstartconservation == true)
             {
@@ -30,19 +31,19 @@ public class NPCDialogue : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         PlayerTrigger Player = collision.gameObject.GetComponent<PlayerTrigger>();
-            if (SpeechPrompt != null)
+        if (SpeechPrompt != null)
+        {
+            SpeechPrompt.SetActive(true);
+            if (!Runner.IsDialogueRunning)
             {
-                SpeechPrompt.SetActive(true);
-                if (! Runner.IsDialogueRunning)
-                {
-                    canstartconservation = true;
-                    Runner.StartDialogue(startNode);
-                }
+                canstartconservation = true;
+                Runner.StartDialogue(startNode);
             }
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-      PlayerTrigger Player = collision.gameObject.GetComponent<PlayerTrigger>();
+        PlayerTrigger Player = collision.gameObject.GetComponent<PlayerTrigger>();
         if (SpeechPrompt != null)
         {
             canstartconservation = false;

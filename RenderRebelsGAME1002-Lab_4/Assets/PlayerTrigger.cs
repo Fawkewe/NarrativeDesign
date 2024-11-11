@@ -12,8 +12,11 @@ public TMPro.TextMeshProUGUI titleText;
  public void OnTriggerEnter2D(Collider2D collision)
  {
     AreaTrigger area = collision.GetComponent<AreaTrigger>();
-    titleText.text = area.title;
-    byLineText.text = "By: " + area.author;
+    if (area != null)
+    {
+       titleText.text = area.title;
+       byLineText.text = "By: " + area.author;
+    }
 
  }
 
