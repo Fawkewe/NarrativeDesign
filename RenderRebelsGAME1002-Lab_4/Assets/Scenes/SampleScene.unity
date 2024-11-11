@@ -618,11 +618,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
+--- !u!1 &436286760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3764876509492201030, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
+  m_PrefabInstance: {fileID: 436958783}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &436286761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7883155749225506097, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
   m_PrefabInstance: {fileID: 436958783}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &436286764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436286760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f90b3cbfd0b9494795838501c8d58d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Runner: {fileID: 1777762}
+  SpeechPrompt: {fileID: 503529967}
+  startNode: KingSnowBall
+  canstartconservation: 1
 --- !u!1001 &436958783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -635,6 +656,10 @@ PrefabInstance:
       propertyPath: Runner
       value: 
       objectReference: {fileID: 1777762}
+    - target: {fileID: 133376416067020675, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 133376416067020675, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
       propertyPath: startNode
       value: KingSnowBall
@@ -714,7 +739,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3764876509492201030, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 436286764}
   m_SourcePrefab: {fileID: 100100000, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
 --- !u!1 &503529967
 GameObject:
@@ -1369,10 +1397,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 133376416067020675, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3764876509492201030, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1640671733}
   m_SourcePrefab: {fileID: 100100000, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
 --- !u!4 &941301627 stripped
 Transform:
@@ -1716,11 +1748,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7883155749225506097, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
   m_PrefabInstance: {fileID: 122414701200776434}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1640671729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3764876509492201030, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
+  m_PrefabInstance: {fileID: 879007047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1640671730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7883155749225506097, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
   m_PrefabInstance: {fileID: 879007047}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1640671733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640671729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 046dbb80bf6481a40915a568a85616a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Runner: {fileID: 1777762}
+  SpeechPrompt: {fileID: 503529967}
+  startNode: MrPeng
+  canstartconservation: 1
 --- !u!1 &1658333525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,6 +2460,10 @@ PrefabInstance:
       propertyPath: SpeechPrompt
       value: 
       objectReference: {fileID: 503529967}
+    - target: {fileID: 133376416067020675, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
+      propertyPath: canstartconservation
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3764876509492201030, guid: c5d0d4d3bc22af145adc1382a64fba72, type: 3}
       propertyPath: m_Name
       value: Dialogue Triger
@@ -2543,6 +2600,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 184651085519759257, guid: 0a331f7c66ce5ac42a54a75bb17e89d0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 838998996224855083, guid: 0a331f7c66ce5ac42a54a75bb17e89d0, type: 3}
       propertyPath: m_Name
       value: Greenland (Jaxen)
@@ -2610,7 +2671,7 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 229621865366039968}
   - {fileID: 3231148506991856494}
-  - {fileID: 1034694488}
   - {fileID: 1815090095}
   - {fileID: 1920035557}
   - {fileID: 174016396}
+  - {fileID: 1034694488}
